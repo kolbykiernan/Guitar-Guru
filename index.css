@@ -1,0 +1,42 @@
+body{
+    display: flex;
+    justify-content: center;
+    background-image: url(./Photos/firmbee-com-YtQAhNbqa2o-unsplash.jpg);
+    height: 100vh;
+    width: 100vw;
+    background-attachment: center;
+    background-size:cover;
+    color: aliceblue;
+    font-family: fantasy;
+}
+
+h1{
+    font-size: 4em;   
+}
+
+h3{
+    font-size: 2em;
+}
+
+.welcome{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+button{
+    margin-top: 5em;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding: 1em;
+    display: flex;
+    width:80%;
+    background-color: rgb(241, 186, 160);
+    justify-content: center;
+    font-family: fantasy;
+    cursor: pointer;
+    font-size: 2em;;
+}
+

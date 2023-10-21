@@ -1,0 +1,255 @@
+*{margin: 0;
+padding:0;  
+}
+
+
+
+body{
+    background-image: url(./Photos/firmbee-com-YtQAhNbqa2o-unsplash.jpg);
+    height: 100%;
+    width: 100%;
+    background-attachment: center;
+    background-size:cover;
+    color: aliceblue;
+    font-family: fantasy; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h4{
+    font-size: .9em;
+    text-align:justify;
+}
+
+h2{
+    font-size: 1.1em;
+}
+
+img{
+    transform: rotate(45deg);
+    margin-right: 1em;
+    cursor: pointer;
+}
+
+/* img:hover{
+    
+} */
+
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+nav h1{
+    padding-left:.8em;
+    padding-top:.8em;
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width:100%;
+}
+
+
+
+.header{
+    display: flex;
+
+    margin-left: 1em;
+    margin-right: 1em;
+    font-size: 1.3em;
+    flex-direction: column;
+}
+
+.header p{
+    font-size: .7em;
+    
+}
+
+
+.alphabet{
+    display:flex;
+    flex-direction: column;
+}
+
+.alphabet div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+.instructions{
+    display: flex; 
+}
+
+.instructions div{
+    display: flex;
+}
+
+.left-info{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.left-info div{
+    display: flex;
+    flex-direction: column;
+    padding-left:1.5em;
+    padding-right:1.5em;
+    align-items: center;
+}
+
+.right-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.right-info div {
+    display: flex;
+    flex-direction: column;
+    padding-left:1.5em;
+    padding-right:1.5em;
+    align-items: center;
+}
+
+#piano{
+    display:flex;
+    flex-direction: column;
+    min-width: 60%;
+    background-color: black;
+    border-radius: 20px;
+    padding:1em;
+    padding-left:3em;
+    padding-right: 3em;
+    padding-bottom: 2em;
+    align-items: center;
+}
+
+.non-keys{
+    font-size: 2em;
+}
+
+.keys{
+    display:flex;
+    width:100%;
+    height:100%;
+    align-items: flex-start;
+    
+    border-radius: 20px;
+}
+
+.keys div{
+    height: 100%;
+    width: 100%;
+    border: 2px solid black;
+    background: linear-gradient(#fff 97%, #eae0e0 3%);
+    border-radius: 5px 5px 10px 10px;
+}
+
+.black{
+    color: rgb(15, 131, 131);
+    border-radius: 20px;
+    background: linear-gradient(#333, #000);
+    border-radius: 0 0 5px 5px;
+    height:50%;
+    width:100%;
+    text-align: center;
+}
+
+.black:active{
+    box-shadow: inset -5px 5px 10px black(255,255,255,.1);
+    background: linear-gradient(to bottom, #000, #434343)
+}
+
+.white{
+    color: rgb(15, 131, 131);
+    border-radius: 20px;
+    width:100%;
+    height:100%;
+    text-align: center;
+}
+
+/* change active to dim, then reference white dim in js */
+
+.white:active{
+    box-shadow: inset -5px 5px 10px black(0,0,0,.2);
+    background: linear-gradient(to right, #bbbaba 0%, #eee 23%)
+}
+
+.final{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.final div{
+    display: flex;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg,#FE6D00,#1384C5) border-box;
+    width: 65%;
+    border-radius: 5px 5px 5px 5px;
+    font-size: 1.4em;
+}
+
+/* copied code below, cited in README */
+
+
+.bubble {
+    --r: 25px; /* the radius */
+    --t: 30px; /* the size of the tail */
+    
+    max-width: 300px;
+    padding: calc(2*var(--r)/3);
+    -webkit-mask: 
+      radial-gradient(var(--t) at var(--_d) 0,#0000 98%,#000 102%) 
+        var(--_d) 100%/calc(100% - var(--r)) var(--t) no-repeat,
+      conic-gradient(at var(--r) var(--r),#000 75%,#0000 0) 
+        calc(var(--r)/-2) calc(var(--r)/-2) padding-box, 
+      radial-gradient(50% 50%,#000 98%,#0000 101%) 
+        0 0/var(--r) var(--r) space padding-box;
+    background: linear-gradient(135deg,#FE6D00,#1384C5) border-box;
+    color: #fff;
+    padding: 0em;
+    margin-top:.3em;
+  }
+
+  .left {
+    --_d: 0%;
+    border-left: var(--t) solid #0000;
+    margin-right: var(--t);
+    place-self: start;
+  }
+  .right {
+    --_d: 100%;
+    border-right: var(--t) solid #0000;
+    margin-left: var(--t);
+    place-self: end;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

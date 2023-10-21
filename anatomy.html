@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guitar Guru</title>
+    <link rel="stylesheet" href="./anatomy.css">
+    <script src="./anatomy.js" defer></script>
+    <audio id="low-c" controls style="display:none">
+        <source  src="./Audio/Piano/Low C.mp3">
+    </audio>
+    <audio id="low-c#" controls style="display:none">
+        <source  src="./Audio/Piano/Low C#.mp3">
+    </audio>
+    <audio id="low-d" controls style="display:none">
+        <source  src="./Audio/Piano/Low D.mp3">
+    </audio>
+    <audio id="low-d#" controls style="display:none">
+        <source  src="./Audio/Piano/Low D# .mp3">
+    </audio>
+    <audio id="low-e" controls style="display:none">
+        <source  src="./Audio/Piano/Low E.mp3">
+    </audio>
+    <audio id="low-f" controls style="display:none">
+        <source  src="./Audio/Piano/Low F.mp3">
+    </audio>
+    <audio id="low-f#" controls style="display:none">
+        <source  src="./Audio/Piano/Low F# .mp3">
+    </audio>
+    <audio id="low-g" controls style="display:none">
+        <source  src="./Audio/Piano/Low G.mp3">
+    </audio>
+    <audio id="low-g#" controls style="display:none">
+        <source  src="./Audio/Piano/Low G# .mp3">
+    </audio>
+    <audio id="low-a" controls style="display:none">
+        <source  src="./Audio/Piano/Low A.mp3">
+    </audio>
+    <audio id="low-a#" controls style="display:none">
+        <source  src="./Audio/Piano/Low A#.mp3">
+    </audio>
+    <audio id="low-b" controls style="display:none">
+        <source  src="./Audio/Piano/Low B.mp3">
+    </audio>
+    <audio id="high-c" controls style="display:none">
+        <source  src="./Audio/Piano/High C.mp3">
+    </audio>
+    <audio id="high-c#" controls style="display:none">
+        <source  src="./Audio/Piano/High C# .mp3">
+    </audio>
+    <audio id="high-d" controls style="display:none">
+        <source  src="./Audio/Piano/High D.mp3">
+    </audio>
+    <audio id="high-d#" controls style="display:none">
+        <source  src="./Audio/Piano/high D# .mp3">
+    </audio>
+    <audio id="high-e" controls style="display:none">
+        <source  src="./Audio/Piano/High E.mp3">
+    </audio>
+    <audio id="high-f" controls style="display:none">
+        <source  src="./Audio/Piano/High F.mp3">
+    </audio>
+    <audio id="high-f#" controls style="display:none">
+        <source  src="./Audio/Piano/High F# .mp3">
+    </audio>
+    <audio id="high-g" controls style="display:none">
+        <source  src="./Audio/Piano/High G.mp3">
+    </audio>
+    <audio id="high-g#" controls style="display:none">
+        <source  src="./Audio/Piano/High G# .mp3">
+    </audio>
+    <audio id="high-a" controls style="display:none">
+        <source  src="./Audio/Piano/High A.mp3">
+    </audio>
+    <audio id="high-a#" controls style="display:none">
+        <source  src="./Audio/Piano/High A#.mp3">
+    </audio>
+    <audio id="high-b" controls style="display:none">
+        <source  src="./Audio/Piano/High B.mp3">
+    </audio>
+</head>
+<body>
+    <nav>
+        <h1 onclick="window.location.href= './index.html'"> Guitar Guru</h1>
+    </nav>
+    <main>
+        <div class="alphabet">
+            <div class = "header">
+                <h1>Before learning guitar, we must learn the Musical Alphabet!</h1>
+                <h3> This is a little bit easier to  visualize on a piano, but we'll be rockin' in no time</h3>
+                <p>Click the guitar to learn more!</p>
+            </div>
+            <div class="text-box">
+                <img src="./Photos/Les Paul.png" alt="electric guitar" width = "70px">
+                <h2> This is the same alphabet that is used with piano, violin, and most instruments. Fortunatley for us, there are similarities with the English alphabet. </h2>   
+            </div>
+            <div class="text-box">
+                <img src="./Photos/Les Paul.png" alt="electric guitar" width = "70px">
+                <h2> The Musical alphabet is made up of 12 notes - A, B, C, D, E, F, G, which can be seen on the white keys, plus 5 sharps, which can be seen with the # symbol on the black keys.</h2>
+            </div>
+            <div class="text-box">
+                <img src="./Photos/Les Paul.png" alt="electric guitar" width = "70px">
+                <h2> Now, notice how see each letter twice. That is becasue the musical alphabet continues to repeat itself from the lowest keys to the highest. </h2>
+            </div>
+        </div>    
+        <div class = instructions>
+            <div class="left-info">
+                <div class = "bubble right">
+                    <img src="./Photos/Les Paul.png" alt="electric guitar" width = "70px">
+                    <h4>Type the letter "c" with your keyboard. Which key did we choose? What sound does it make?</h4>
+                </div>
+                <div class = "bubble right">
+                    <img src="./Photos/Les Paul.png" alt="electric guitar" width = "70px">
+                    <h4>Type the letter C, then D, then E all the way up until you reach the letter B. Notice how we are playing with the C through B on the left half of the keyboard</h4>
+                </div>
+            </div>    
+            <div id = "piano">
+                <div class="non-keys">
+                    <p> Guitar Guru</p>
+                </div>
+                <li class ="keys">
+                    <div>
+                        <ul id="low-c" class ="white">C</ul>
+                        <ul id="low-c#" class ="black">C#</ul>
+                    </div>
+                    <div> 
+                        <ul id="low-d" class ="white">D</ul>
+                        <ul id="low-d#" class ="black">D#</ul>
+                    </div>
+                    <div>
+                        <ul id="low-e" class ="white">E</ul>
+                    </div>
+                    <div>
+                        <ul id="low-f" class ="white">F</ul>
+                        <ul id="low-f#" class ="black">F#</ul>
+                    </div>
+                    <div>
+                        <ul id="low-g" class ="white">G</ul>
+                        <ul id="low-g#" class ="black">G#</ul>
+                    </div>
+                    <div>
+                        <ul id="low-a" class ="white">A</ul>
+                        <ul id="low-a#" class ="black">A#</ul>
+                    </div>
+                    <div>
+                        <ul id="low-b" class ="white">B</ul>
+                    </div>
+                    <div>
+                        <ul id="high-c"class ="white">C</ul>
+                        <ul id="high-c#" class ="black">C#</ul>
+                    </div>
+                    <div>
+                        <ul id="high-d" class ="white">D</ul>
+                        <ul id="high-d#" class ="black">D#</ul>
+                    </div>
+                    <div>
+                        <ul id="high-e" class ="white">E</ul>
+                    </div>
+                    <div>
+                        <ul id="high-f" class ="white">F</ul>
+                        <ul id="high-f#" class ="black">F#</ul>
+                    </div>  
+                    <div>
+                        <ul id="high-g" class ="white">G</ul>
+                        <ul id="high-g#" class ="black">G#</ul>
+                    </div>
+                    <div>
+                        <ul id="high-a" class ="white">A</ul>
+                        <ul id="high-a#" class ="black">A#</ul>
+                    </div>
+                    <div>
+                        <ul id="high-b"class ="white">B</ul>
+                    </div>  
+                </li>
+            </div>
+            <div class="right-info">
+                <div class = "bubble left">
+                    <img src="./Photos/Les Paul.png" alt="electric guitar" width = "70px">
+                    <h4>Now hold shift and type "c". Which key played now? We just played the same note, just in a different "octave", or grouping of notes based on the pitch. This keyboard has two octaves.</h4>
+                </div>
+                <div class = "bubble left">
+                    <img src="./Photos/Les Paul.png" alt="electric guitar" width = "70px">
+                    <h4>Now type the letter "c" and hit shift at the same time. Now which key played?</h4>
+                </div>
+            </div>
+        </div>
+        <div class="final">
+            <div>
+                <img src="./Photos/Les Paul.png" alt="electric guitar" width = "70px">
+                <h4>In our game, we will play a sharp or # by holding the space along with the letter it coorespond with</h4>
+            </div>
+        </div>    
+    </main>
+</body>
+</html>
