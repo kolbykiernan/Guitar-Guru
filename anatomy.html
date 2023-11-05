@@ -10,13 +10,13 @@
         <source  src="./Audio/Piano/Low C.mp3">
     </audio>
     <audio id="low-c#" controls style="display:none">
-        <source  src="./Audio/Piano/Low C#.mp3">
+        <source  src="./Audio/Piano/Low C sharp.mp3">
     </audio>
     <audio id="low-d" controls style="display:none">
         <source  src="./Audio/Piano/Low D.mp3">
     </audio>
     <audio id="low-d#" controls style="display:none">
-        <source  src="./Audio/Piano/Low D# .mp3">
+        <source  src="./Audio/Piano/Low D sharp.mp3">
     </audio>
     <audio id="low-e" controls style="display:none">
         <source  src="./Audio/Piano/Low E.mp3">
@@ -25,19 +25,19 @@
         <source  src="./Audio/Piano/Low F.mp3">
     </audio>
     <audio id="low-f#" controls style="display:none">
-        <source  src="./Audio/Piano/Low F# .mp3">
+        <source  src="./Audio/Piano/Low F sharp.mp3">
     </audio>
     <audio id="low-g" controls style="display:none">
         <source  src="./Audio/Piano/Low G.mp3">
     </audio>
     <audio id="low-g#" controls style="display:none">
-        <source  src="./Audio/Piano/Low G# .mp3">
+        <source  src="./Audio/Piano/Low G sharp.mp3">
     </audio>
     <audio id="low-a" controls style="display:none">
         <source  src="./Audio/Piano/Low A.mp3">
     </audio>
     <audio id="low-a#" controls style="display:none">
-        <source  src="./Audio/Piano/Low A#.mp3">
+        <source  src="./Audio/Piano/Low A sharp.mp3">
     </audio>
     <audio id="low-b" controls style="display:none">
         <source  src="./Audio/Piano/Low B.mp3">
@@ -46,13 +46,13 @@
         <source  src="./Audio/Piano/High C.mp3">
     </audio>
     <audio id="high-c#" controls style="display:none">
-        <source  src="./Audio/Piano/High C# .mp3">
+        <source  src="./Audio/Piano/High C sharp.mp3">
     </audio>
     <audio id="high-d" controls style="display:none">
         <source  src="./Audio/Piano/High D.mp3">
     </audio>
     <audio id="high-d#" controls style="display:none">
-        <source  src="./Audio/Piano/high D# .mp3">
+        <source  src="./Audio/Piano/High D sharp.mp3">
     </audio>
     <audio id="high-e" controls style="display:none">
         <source  src="./Audio/Piano/High E.mp3">
@@ -61,19 +61,19 @@
         <source  src="./Audio/Piano/High F.mp3">
     </audio>
     <audio id="high-f#" controls style="display:none">
-        <source  src="./Audio/Piano/High F# .mp3">
+        <source  src="./Audio/Piano/High F sharp.mp3">
     </audio>
     <audio id="high-g" controls style="display:none">
         <source  src="./Audio/Piano/High G.mp3">
     </audio>
     <audio id="high-g#" controls style="display:none">
-        <source  src="./Audio/Piano/High G# .mp3">
+        <source  src="./Audio/Piano/High G sharp.mp3">
     </audio>
     <audio id="high-a" controls style="display:none">
         <source  src="./Audio/Piano/High A.mp3">
     </audio>
     <audio id="high-a#" controls style="display:none">
-        <source  src="./Audio/Piano/High A#.mp3">
+        <source  src="./Audio/Piano/High A sharp.mp3">
     </audio>
     <audio id="high-b" controls style="display:none">
         <source  src="./Audio/Piano/High B.mp3">
@@ -87,31 +87,31 @@
         <div class="alphabet">
             <div class = "header">
                 <h1>Before learning guitar, we must learn the Musical Alphabet!</h1>
-                <h3> This is a little bit easier to  visualize on a piano, but we'll be rockin' in no time</h3>
+                <h3> This is a little bit easier to  visualize on a piano, but we'll be rockin' in no time.</h3>
                 <p>Click the guitar to learn more!</p>
             </div>
             <div class="text-box">
-                <img src="./Photos/Les Paul.png" alt="electric guitar" width = "70px">
-                <h2> This is the same alphabet that is used with piano, violin, and most instruments. Fortunatley for us, there are similarities with the English alphabet. </h2>   
+                <img id = "guitar-1" onclick="revealTextBoxOne()" src="./Photos/Les Paul.png" alt="electric guitar" width = "70px">
+                <h2 id = "text-1" style ="display: none;"> This is the same alphabet that is used for guitar, piano, violin, saxophone, vocals, and most instruments. Fortunately for us, the musical alphabet uses some of the same letters as the English alphabet. </h2>   
             </div>
             <div class="text-box">
-                <img src="./Photos/Les Paul.png" alt="electric guitar" width = "70px">
-                <h2> The Musical alphabet is made up of 12 notes - A, B, C, D, E, F, G, which can be seen on the white keys, plus 5 sharps, which can be seen with the # symbol on the black keys.</h2>
+                <img id="guitar-2" style="display:none" onclick="revealTextBoxTwo()" src="./Photos/Les Paul.png" alt="electric guitar" width = "70px">
+                <h2 id="text-2" style="display:none"> The Musical alphabet is made up of 12 notes - A, B, C, D, E, F, & G, which are seen below on the white keys, plus 5 sharps, which contain the # symbol on the black keys.</h2>
             </div>
             <div class="text-box">
-                <img src="./Photos/Les Paul.png" alt="electric guitar" width = "70px">
-                <h2> Now, notice how see each letter twice. That is becasue the musical alphabet continues to repeat itself from the lowest keys to the highest. </h2>
+                <img id="guitar-3" style="display:none" onclick="revealTextBoxThree()" src="./Photos/Les Paul.png" alt="electric guitar" width = "70px">
+                <h2 id="text-3" style="display:none"> Though there are 12 notes that make up the musical alphabet, there are 88 keys on a tradtional piano. Look at the "B" key in the middle of the keyboard. Notice how we see this letter again on the far right of the keyboard. That is because the musical alphabet continues to repeat itself from the lowest keys to the highest. In the interest of learning the musical alphabet, our piano below only has 24 keys. </h2>
             </div>
         </div>    
         <div class = instructions>
             <div class="left-info">
-                <div class = "bubble right">
-                    <img src="./Photos/Les Paul.png" alt="electric guitar" width = "70px">
-                    <h4>Type the letter "c" with your keyboard. Which key did we choose? What sound does it make?</h4>
+                <div class = "text-box">
+                    <img id = "guitar-4" style="display:none" onclick="revealTextBoxFour()" src="./Photos/Les Paul.png" alt="electric guitar" width = "70px">
+                    <h4 id = "text-4" style="display:none">TYPE and HOLD the letter "c" with your keyboard. Which key did we push? TYPE and HOLD it again. What sound does it make? Now TYPE and HOLD the letter "d". Do this for each letter on the white keys until you reach the letter "b".</h4>
                 </div>
-                <div class = "bubble right">
-                    <img src="./Photos/Les Paul.png" alt="electric guitar" width = "70px">
-                    <h4>Type the letter C, then D, then E all the way up until you reach the letter B. Notice how we are playing with the C through B on the left half of the keyboard</h4>
+                <div class = "text-box">
+                    <img id = "guitar-5" style="display:none" onclick="revealTextBoxFive()" src="./Photos/Les Paul.png" alt="electric guitar" width = "70px">
+                    <h4 id="text-5" style="display:none"> Notice how the further right we go, the higher, the note plays. Once, we hit "b", we are one note away from completing a "C" scale. This is when you start with a letter on the keyboard and walk up until you reach the letter again. </h4>
                 </div>
             </div>    
             <div id = "piano">
@@ -120,74 +120,74 @@
                 </div>
                 <li class ="keys">
                     <div>
-                        <ul id="low-c" class ="white">C</ul>
-                        <ul id="low-c#" class ="black">C#</ul>
+                        <ul id="low-c" class ="key white">C</ul>
+                        <ul id="low-c#" class ="key black">C#</ul>
                     </div>
                     <div> 
-                        <ul id="low-d" class ="white">D</ul>
-                        <ul id="low-d#" class ="black">D#</ul>
+                        <ul id="low-d" class ="key white">D</ul>
+                        <ul id="low-d#" class ="key black">D#</ul>
                     </div>
                     <div>
-                        <ul id="low-e" class ="white">E</ul>
+                        <ul id="low-e" class ="key white">E</ul>
                     </div>
                     <div>
-                        <ul id="low-f" class ="white">F</ul>
-                        <ul id="low-f#" class ="black">F#</ul>
+                        <ul id="low-f" class ="key white">F</ul>
+                        <ul id="low-f#" class ="key black">F#</ul>
                     </div>
                     <div>
-                        <ul id="low-g" class ="white">G</ul>
-                        <ul id="low-g#" class ="black">G#</ul>
+                        <ul id="low-g" class ="key white">G</ul>
+                        <ul id="low-g#" class ="key black">G#</ul>
                     </div>
                     <div>
-                        <ul id="low-a" class ="white">A</ul>
-                        <ul id="low-a#" class ="black">A#</ul>
+                        <ul id="low-a" class ="key white">A</ul>
+                        <ul id="low-a#" class ="key black">A#</ul>
                     </div>
                     <div>
-                        <ul id="low-b" class ="white">B</ul>
+                        <ul id="low-b" class ="key white">B</ul>
                     </div>
                     <div>
-                        <ul id="high-c"class ="white">C</ul>
-                        <ul id="high-c#" class ="black">C#</ul>
+                        <ul id="high-c"class ="key white">C</ul>
+                        <ul id="high-c#" class ="key black">C#</ul>
                     </div>
                     <div>
-                        <ul id="high-d" class ="white">D</ul>
-                        <ul id="high-d#" class ="black">D#</ul>
+                        <ul id="high-d" class ="key white">D</ul>
+                        <ul id="high-d#" class ="key black">D#</ul>
                     </div>
                     <div>
-                        <ul id="high-e" class ="white">E</ul>
+                        <ul id="high-e" class ="key white">E</ul>
                     </div>
                     <div>
-                        <ul id="high-f" class ="white">F</ul>
-                        <ul id="high-f#" class ="black">F#</ul>
+                        <ul id="high-f" class ="key white">F</ul>
+                        <ul id="high-f#" class ="key black">F#</ul>
                     </div>  
                     <div>
-                        <ul id="high-g" class ="white">G</ul>
-                        <ul id="high-g#" class ="black">G#</ul>
+                        <ul id="high-g" class ="key white">G</ul>
+                        <ul id="high-g#" class ="key black">G#</ul>
                     </div>
                     <div>
-                        <ul id="high-a" class ="white">A</ul>
-                        <ul id="high-a#" class ="black">A#</ul>
+                        <ul id="high-a" class ="key white">A</ul>
+                        <ul id="high-a#" class ="key black">A#</ul>
                     </div>
                     <div>
-                        <ul id="high-b"class ="white">B</ul>
+                        <ul id="high-b"class ="key white">B</ul>
                     </div>  
                 </li>
             </div>
             <div class="right-info">
-                <div class = "bubble left">
-                    <img src="./Photos/Les Paul.png" alt="electric guitar" width = "70px">
-                    <h4>Now hold shift and type "c". Which key played now? We just played the same note, just in a different "octave", or grouping of notes based on the pitch. This keyboard has two octaves.</h4>
+                <div class = "text-box">
+                    <img id = "guitar-7" style="display:none" onclick="revealTextBoxSeven()" src="./Photos/Les Paul.png" alt="electric guitar" width = "70px">
+                    <h4 id="text-7" style="display:none">Now hold the 'control key' as you TYPE and HOLD the letter "c". Now which key played? In our game, we will play a sharp or # by holding the space along with the letter it cooresponds with.</h4>
                 </div>
-                <div class = "bubble left">
-                    <img src="./Photos/Les Paul.png" alt="electric guitar" width = "70px">
-                    <h4>Now type the letter "c" and hit shift at the same time. Now which key played?</h4>
+                <div class = "text-box">
+                    <img id = "guitar-6" style="display:none" onclick="revealTextBoxSix()" src="./Photos/Les Paul.png" alt="electric guitar" width = "70px">
+                    <h4 id="text-6" style="display:none">Now TYPE and HOLD an uppercase "C". We played the same note as the "c" below, just in a different "octave", or grouping of notes based on the pitch. This keyboard has two octaves. To play the higher octave, TYPE and HOLD the same letters UPPERCASE.</h4>
                 </div>
             </div>
         </div>
         <div class="final">
             <div>
-                <img src="./Photos/Les Paul.png" alt="electric guitar" width = "70px">
-                <h4>In our game, we will play a sharp or # by holding the space along with the letter it coorespond with</h4>
+                <img id = "guitar-8" style="display:none" onclick="" src="./Photos/Les Paul.png" alt="electric guitar" width = "120px">
+                <h4 id="text-8" style="display:none">Now let's see this on a guitar!</h4>
             </div>
         </div>    
     </main>
