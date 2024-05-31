@@ -125,5 +125,5 @@ This project is licensed under the MIT License
 
 ## Credits
 
-  ** background image: (firmbee)  https://unsplash.com/photos/YtQAhNbqa2o
+  ** background image: (firmbee)  https://unsplash.com/photos/YtQAhNbqa2o   
   ** electric guitar: https://www.iconarchive.com/show/lesters-electric-guitar-icons-by-wackypixel/Burst-Guitar-icon.html
