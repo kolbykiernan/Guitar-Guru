@@ -5,7 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guitar Guru</title>
     <link rel="stylesheet" href="./anatomy.css">
-    <script src="./anatomy.js" defer></script>
+    <link rel="icon" href="./Photos/Les Paul.png" type="image/x-icon">
+    <script src="./dist/anatomy.js" defer></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          const whiteKeys = document.querySelectorAll('.white');
+        
+          whiteKeys.forEach(key => {
+            key.addEventListener('mousedown', function() {
+              this.parentElement.classList.add('pushed');
+            });
+        
+            key.addEventListener('mouseup', function() {
+              this.parentElement.classList.remove('pushed');
+            });
+        
+            key.addEventListener('mouseleave', function() {
+              this.parentElement.classList.remove('pushed');
+            });
+          });
+        });
+        </script>
     <audio id="low-c" controls style="display:none">
         <source  src="./Audio/Piano/Low C.mp3">
     </audio>
@@ -91,26 +111,26 @@
                 <p>Click the guitar to learn more!</p>
             </div>
             <div class="text-box">
-                <img id = "guitar-1" onclick="revealTextBoxOne()" src="./Photos/Les Paul.png" alt="electric guitar" width = "70px">
+                <img id = "guitar-1" src="./Photos/Les Paul.png" alt="electric guitar" width = "70px">
                 <h2 id = "text-1" style ="display: none;"> This is the same alphabet that is used for guitar, piano, violin, saxophone, vocals, and most instruments. Fortunately for us, the musical alphabet uses some of the same letters as the English alphabet. </h2>   
             </div>
             <div class="text-box">
-                <img id="guitar-2" style="display:none" onclick="revealTextBoxTwo()" src="./Photos/Les Paul.png" alt="electric guitar" width = "70px">
+                <img id="guitar-2" style="display:none" src="./Photos/Les Paul.png" alt="electric guitar" width = "70px">
                 <h2 id="text-2" style="display:none"> The Musical alphabet is made up of 12 notes - A, B, C, D, E, F, & G, which are seen below on the white keys, plus 5 sharps, which contain the # symbol on the black keys.</h2>
             </div>
             <div class="text-box">
-                <img id="guitar-3" style="display:none" onclick="revealTextBoxThree()" src="./Photos/Les Paul.png" alt="electric guitar" width = "70px">
+                <img id="guitar-3" style="display:none" src="./Photos/Les Paul.png" alt="electric guitar" width = "70px">
                 <h2 id="text-3" style="display:none"> Though there are 12 notes that make up the musical alphabet, there are 88 keys on a tradtional piano. Look at the "B" key in the middle of the keyboard. Notice how we see this letter again on the far right of the keyboard. That is because the musical alphabet continues to repeat itself from the lowest keys to the highest. In the interest of learning the musical alphabet, our piano below only has 24 keys. </h2>
             </div>
         </div>    
         <div class = instructions>
             <div class="left-info">
                 <div class = "text-box">
-                    <img id = "guitar-4" style="display:none" onclick="revealTextBoxFour()" src="./Photos/Les Paul.png" alt="electric guitar" width = "70px">
+                    <img id = "guitar-4" style="display:none" src="./Photos/Les Paul.png" alt="electric guitar" width = "70px">
                     <h4 id = "text-4" style="display:none">TYPE and HOLD the letter "c" with your keyboard. Which key did we push? TYPE and HOLD it again. What sound does it make? Now TYPE and HOLD the letter "d". Do this for each letter on the white keys until you reach the letter "b".</h4>
                 </div>
                 <div class = "text-box">
-                    <img id = "guitar-5" style="display:none" onclick="revealTextBoxFive()" src="./Photos/Les Paul.png" alt="electric guitar" width = "70px">
+                    <img id = "guitar-5" style="display:none" src="./Photos/Les Paul.png" alt="electric guitar" width = "70px">
                     <h4 id="text-5" style="display:none"> Notice how the further right we go, the higher, the note plays. Once, we hit "b", we are one note away from completing a "C" scale. This is when you start with a letter on the keyboard and walk up until you reach the letter again. </h4>
                 </div>
             </div>    
@@ -119,67 +139,67 @@
                     <p> Guitar Guru</p>
                 </div>
                 <li class ="keys">
-                    <div>
+                    <div id="low-c-div">
                         <ul id="low-c" class ="key white">C</ul>
                         <ul id="low-c#" class ="key black">C#</ul>
                     </div>
-                    <div> 
+                    <div id="low-d-div"> 
                         <ul id="low-d" class ="key white">D</ul>
                         <ul id="low-d#" class ="key black">D#</ul>
                     </div>
-                    <div>
+                    <div id="low-e-div">
                         <ul id="low-e" class ="key white">E</ul>
                     </div>
-                    <div>
+                    <div id="low-f-div">
                         <ul id="low-f" class ="key white">F</ul>
                         <ul id="low-f#" class ="key black">F#</ul>
                     </div>
-                    <div>
+                    <div id="low-g-div">
                         <ul id="low-g" class ="key white">G</ul>
                         <ul id="low-g#" class ="key black">G#</ul>
                     </div>
-                    <div>
+                    <div id="low-a-div">
                         <ul id="low-a" class ="key white">A</ul>
                         <ul id="low-a#" class ="key black">A#</ul>
                     </div>
-                    <div>
+                    <div id="low-b-div">
                         <ul id="low-b" class ="key white">B</ul>
                     </div>
-                    <div>
+                    <div id="high-c-div">
                         <ul id="high-c"class ="key white">C</ul>
                         <ul id="high-c#" class ="key black">C#</ul>
                     </div>
-                    <div>
+                    <div id="high-d-div">
                         <ul id="high-d" class ="key white">D</ul>
                         <ul id="high-d#" class ="key black">D#</ul>
                     </div>
-                    <div>
+                    <div id="high-e-div">
                         <ul id="high-e" class ="key white">E</ul>
                     </div>
-                    <div>
+                    <div id="high-f-div">
                         <ul id="high-f" class ="key white">F</ul>
                         <ul id="high-f#" class ="key black">F#</ul>
                     </div>  
-                    <div>
+                    <div id="high-g-div">
                         <ul id="high-g" class ="key white">G</ul>
                         <ul id="high-g#" class ="key black">G#</ul>
                     </div>
-                    <div>
+                    <div id="high-a-div">
                         <ul id="high-a" class ="key white">A</ul>
                         <ul id="high-a#" class ="key black">A#</ul>
                     </div>
-                    <div>
+                    <div id="high-b-div">
                         <ul id="high-b"class ="key white">B</ul>
                     </div>  
                 </li>
             </div>
             <div class="right-info">
                 <div class = "text-box">
-                    <img id = "guitar-7" style="display:none" onclick="revealTextBoxSeven()" src="./Photos/Les Paul.png" alt="electric guitar" width = "70px">
+                    <img id = "guitar-7" style="display:none" src="./Photos/Les Paul.png" alt="electric guitar" width = "70px">
                     <h4 id="text-7" style="display:none">Now hold the 'control key' as you TYPE and HOLD the letter "c". Now which key played? In our game, we will play a sharp or # by holding the space along with the letter it cooresponds with.</h4>
                 </div>
                 <div class = "text-box">
-                    <img id = "guitar-6" style="display:none" onclick="revealTextBoxSix()" src="./Photos/Les Paul.png" alt="electric guitar" width = "70px">
+                    <img id = "guitar-6" style="display:none" src="./Photos/Les Paul.png" alt="electric guitar" width = "70px">
                     <h4 id="text-6" style="display:none">Now TYPE and HOLD an uppercase "C". We played the same note as the "c" below, just in a different "octave", or grouping of notes based on the pitch. This keyboard has two octaves. To play the higher octave, TYPE and HOLD the same letters UPPERCASE.</h4>
                 </div>
             </div>
@@ -187,7 +207,7 @@
         <div class="final">
             <div>
                 <img id = "guitar-8" style="display:none" onclick="" src="./Photos/Les Paul.png" alt="electric guitar" width = "120px">
-                <h4 id="text-8" style="display:none">Now let's see this on a guitar!</h4>
+                <h4 id="text-8" style="display:none">This is as far as I've gotten with this project. See README for more details.</h4>
             </div>
         </div>    
     </main>
