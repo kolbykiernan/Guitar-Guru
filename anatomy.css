@@ -1,259 +1,261 @@
-*{margin: 0;
-padding:0;  
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
-
-body{
-    background-image: url(./Photos/firmbee-com-YtQAhNbqa2o-unsplash.jpg);
-    height: 100%;
-    width: 100%;
-    background-attachment: center;
-    background-size:cover;
-    color: aliceblue;
-    font-family: italic; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-    
+html, body {
+  height: 100%;
+  margin: 0;
 }
 
-h4{
+body {
+  background-image: url(./Photos/firmbee-com-YtQAhNbqa2o-unsplash.jpg);
+  min-height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: aliceblue;
+  font-family: italic;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h4 {
+  font-size: 1.5vh;
+  font-weight: 900;
+  text-align: justify;
+  padding-left: 0.7em;
+  padding-right: 0.7em;
+  line-height: 1.4em;
+  letter-spacing: 0.5px;
+  text-shadow: 2px 2px #000000;
+}
+
+h2 {
+  text-shadow: 1px 1px #000000;
+  font-size: 1vw;
+}
+
+h3 {
+  font-size: 1.25vw;
+  text-shadow: 1px 1px #000000;
+}
+
+h1 {
+  font-size: 2.5vw;
+}
+
+img {
+  transform: rotate(45deg);
+  margin-right: 1em;
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+}
+nav h1 {
+  padding-left: 0.8em;
+  padding-top: 0.8em;
+  cursor: pointer;
+  font-family: fantasy;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.header {
+  display: flex;
+  margin-left: 1em;
+  margin-right: 1em;
+  font-size: 1.3em;
+  flex-direction: column;
+}
+.header p {
+  font-size: 0.7em;
+}
+
+.alphabet {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  letter-spacing: 0.5px;
+  max-height: 35%;
+  margin-left: 1.25em;
+  margin-right: 1.25em;
+}
+.alphabet div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5em;
+  text-shadow: 1px 1px #000000;
+}
+
+.instructions {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 50vh;
+  width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.instructions .left-info {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height: 100%;
+  justify-content: space-around;
+}
+.instructions .left-info div {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  align-items: center;
+}
+.instructions #piano {
+  display: flex;
+  flex-direction: column;
+  min-width: 60%;
+  max-height: 90%;
+  background-color: black;
+  border-radius: 20px;
+  padding: 1em;
+  padding-left: 3em;
+  padding-right: 3em;
+  padding-bottom: 2em;
+  align-items: center;
+  height: 100%;
+}
+.instructions #piano .non-keys {
+  font-size: 2em;
+  font-family: fantasy;
+  display: flex;
+  justify-content: center;
+}
+.instructions #piano .keys {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100%;
+  align-items: flex-start;
+  font-family: copperplate;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.instructions #piano .keys div {
+  display: flex;
+  flex-direction: row;
+  flex: 1; /* Make each key take an equal share of the available width */
+  height: 100%;
+  border: 2px solid black;
+  background: linear-gradient(#fff 97%, #eae0e0 3%);
+  border-radius: 5px 5px 10px 10px;
+  margin: 0 1px; /* Add a small margin between keys */
+  box-sizing: border-box;
+}
+.instructions #piano .keys div.pushed {
+  box-shadow: inset -5px 5px 10px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to right, #bbbaba 0%, #ffffff 70%);
+}
+.instructions #piano .keys .black {
+  color: rgb(255, 255, 255);
+  background: linear-gradient(#333, #000);
+  height: 50%;
+  width: 100%; /* Adjust width to fit within the white key */
+  text-align: center;
+  position: relative; /* Position black keys on top of white keys */
+}
+.instructions #piano .keys .black-pushed {
+  box-shadow: inset -5px 5px 10px rgba(255, 255, 255, 0.1);
+  background: linear-gradient(to bottom, #000, #595959);
+}
+.instructions #piano .keys .white {
+  color: rgb(0, 0, 0);
+  border-radius: 3px 4px 10px 10px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  position: relative;
+}
+.instructions #piano .keys .white-pushed {
+  box-shadow: inset -5px 5px 10px rgba(255, 255, 255, 0.2);
+  background: linear-gradient(to right, #bbbaba 0%, #ffffff 70%);
+}
+.instructions .right-info {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height: 100%;
+  justify-content: space-around;
+}
+.instructions .right-info div {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  align-items: center;
+}
+
+.text-box {
+  margin: 0;
+  border-radius: 10px;
+}
+
+.final {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.final div {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 0.2em;
+  width: 65%;
+  border-radius: 5px 125px 5px 125px;
+  font-size: 1.4vh;
+}
+
+@media (max-width: 768px) {
+  h4 {
+    font-size: 0.8em;
+  }
+  h2 {
     font-size: 1em;
-    font: weight 900;
-    text-align:justify;
-    padding-left: .7em;
-    padding-right: .7em;
-    line-height: 1.4em;
-    letter-spacing: .5px;
-    text-shadow: 2px 2px #000000;
+  }
+  h3 {
+    font-size: 0.6em;
+  }
 }
-
-h2{
-    text-shadow: 1px 1px #000000;
-    font-size: 1.25em;
-
+@media (max-width: 480px) {
+  h4 {
+    font-size: 0.6em;
+  }
+  h2 {
+    font-size: 0.8em;
+  }
+  h3 {
+    font-size: 0.5em;
+  }
 }
-
-h3{
-    font-size: .8em;
-    text-shadow: 1px 1px #000000;
-}
-
-img{
-    transform: rotate(45deg);
-    margin-right: 1em;
-    cursor: pointer;
-}
-
-
-
-nav{
-    display: flex;
-    width: 100%;
-    justify-content: flex-start;
-}
-
-nav h1{
-    padding-left:.8em;
-    padding-top:.8em;
-    cursor: pointer;
-    font-size: 1.5em;
-    font-family: fantasy; 
-}
-
-
-
-main{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width:100%;
-    
-}
-
-
-
-.header{
-    display: flex;
-
-    margin-left: 1em;
-    margin-right: 1em;
-    font-size: 1.3em;
-    flex-direction: column;
-}
-
-.header p{
-    font-size: .7em;
-    
-}
-
-
-.alphabet{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    letter-spacing: .5px;
-}
-
-.alphabet div{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin:.9em;
-    text-shadow: 1px 1px #000000;
-    
-}
-
-.instructions{
-    display: flex;
-    justify-content: center;
-    height:50vh;
-    width:100%;
-    align-items: center;
-}
-
-.instructions div{
-    display: flex;
-    
-}
-
-.left-info{
-    display: flex;
-    flex-direction: column;
-    
-}
-
-.left-info div{
-    display: flex;
-    flex-direction: column;
-    padding-left:1.5em;
-    padding-right:1.5em;
-    align-items: center;
-}
-
-.right-info{
-    display: flex;
-    flex-direction: column;
-}
-
-.right-info div {
-    display: flex;
-    flex-direction: column;
-    padding-left:1.5em;
-    padding-right:1.5em;
-    align-items: center;
-}
-
-#piano{
-    display:flex;
-    flex-direction: column;
-    min-width: 60%;
-    max-height:90%;
-    background-color: black;
-    border-radius: 20px;
-    padding:1em;
-    padding-left:3em;
-    padding-right: 3em;
-    padding-bottom: 2em;
-    align-items: center;
-    height:100%;
-}
-
-.non-keys{
-    font-size: 2em;
-    font-family: fantasy;
-}
-
-.keys{
-    display:flex;
-    width:100%;
-    height:100%;
-    align-items: flex-start;
-    font-family: copperplate;
-    
-    border-radius: 20px;
-}
-
-.keys div{
-    height: 100%;
-    width: 100%;
-    border: 2px solid black;
-    background: linear-gradient(#fff 97%, #eae0e0 3%);
-    border-radius: 5px 5px 10px 10px;
-}
-
-.black{
-    color: rgb(255, 255, 255);
-    border-radius: 20px;
-    background: linear-gradient(#333, #000);
-    border-radius: 0 0 5px 5px;
-    height:50%;
-    width:100%;
-    text-align: center;
-}
-
-.black-pushed{
-    box-shadow: inset -5px 5px 10px black(255,255,255,.1);
-    background: linear-gradient(to bottom, #000, #595959)
-}
-
-
-.white{
-    color: rgb(0, 0, 0);
-    border-radius: 3px 4px 10px 10px;
-    width:100%;
-    height:100%;
-    text-align: center;
-}
-
-.white-pushed{
-    box-shadow: inset -5px 5px 10px black(0,0,0,.2);
-    background: linear-gradient(to right, #bbbaba 0%, #ffffff 70%)
-}
-
-.text-box{
-    
-    margin:.6em;
-    border-radius: 10px;
-}
-
-.final{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-}
-
-.final div{
-    display: flex;
-    width:100%;
-    justify-content: center;
-    align-items: center;
-    margin-top: .2em;
-    width: 65%;
-    border-radius: 5px 125px 5px 125px;
-    font-size: 1.4em;
-}
-
-/* copied code below, cited in README */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media (orientation: portrait) {
+  body {
+    transform: rotate(90deg);
+    transform-origin: center center;
+  }
+}/*# sourceMappingURL=anatomy.css.map */

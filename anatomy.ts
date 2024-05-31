@@ -40,12 +40,14 @@ function stopKey(key: Key): void {
     const audio = audioElements[key];
     const element = keyElements[key];
 
-    audio.pause();
+    setTimeout(() => {
+        audio.pause();
 
-    const className = whiteKeys.includes(key) ? 'white-pushed' : 'black-pushed';
-    if (element.classList.contains(className)) {
-        element.classList.remove(className);
-    }
+        const className = whiteKeys.includes(key) ? 'white-pushed' : 'black-pushed';
+        if (element.classList.contains(className)) {
+            element.classList.remove(className);
+        }
+    }, 500); // Delay of 0.5 seconds
 }
 
 // Keydown event listener
@@ -118,13 +120,28 @@ guitarElements.forEach((guitar, index) => {
 });
 
 // Play transition audio
-function playTransitionAudio(): void {
-    const transitionAudio = document.getElementById("transition-audio") as HTMLAudioElement;
-    const playButton = document.getElementById("main-button") as HTMLButtonElement;
+// function playTransitionAudio(): void {
+//     const transitionAudio = document.getElementById("transition-audio") as HTMLAudioElement;
+//     const playButton = document.getElementById("main-button") as HTMLButtonElement;
 
-    playButton.addEventListener('click', () => {
-        transitionAudio.play();
-    });
-}
+//     playButton.addEventListener('click', () => {
+//         transitionAudio.play();
+//     });
+// }
 
-playTransitionAudio();
+// playTransitionAudio();
+
+// document.addEventListener('DOMContentLoaded', () => {
+//     const rotateScreen = () => {
+//       const body = document.body;
+//       if (window.innerWidth < 500) { // Rotate if the width is less than 480px
+//         body.classList.add('rotate');
+//       } else {
+//         body.classList.remove('rotate');
+//       }
+//     };
+  
+//     window.addEventListener('resize', rotateScreen);
+//     rotateScreen(); // Initial check
+//   });
+  

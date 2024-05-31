@@ -1,0 +1,13 @@
+{
+  "devDependencies": {
+    "typescript": "^5.4.5"
+  },
+  "scripts": {
+    "build": "npx tsc",
+    "build-css": "npx sass anatomy.scss anatomy.css",
+    "watch-css": "npx sass --watch anatomy.scss:anatomy.css"
+  },
+  "dependencies": {
+    "sass": "^1.77.3"
+  }
+}
